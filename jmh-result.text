@@ -1,0 +1,13 @@
+Benchmark                       Mode  Cnt   Score   Error  Units
+Carts.DI_Carts                  avgt   50  14,515 ± 0,234   s/op
+Carts.OTelCarts                 avgt   50  11,865 ± 0,015   s/op
+Carts.controlCarts              avgt   50   8,928 ± 0,019   s/op
+Carts.specialCarts              avgt   50  30,135 ± 0,215   s/op
+Demo.DI_demo                    avgt   50   9,407 ± 0,008   s/op
+Demo.OTeldemo                   avgt   50   9,582 ± 0,041   s/op
+Demo.controldemo                avgt   50   6,855 ± 0,009   s/op
+Demo.specialdemo                avgt   50  19,527 ± 0,035   s/op
+TrainTicket.DI_TrainTicker      avgt   50  12,177 ± 0,012   s/op
+TrainTicket.OTelTrainTicket     avgt   50  12,113 ± 0,015   s/op
+TrainTicket.controlTrainTicket  avgt   50   8,973 ± 0,014   s/op
+TrainTicket.specialTrainTicket  avgt   50  41,578 ± 1,222   s/op
