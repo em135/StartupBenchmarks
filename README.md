@@ -1,6 +1,6 @@
 # Startup Benchmarks
-This repository measures the initialization times introduced by various 3 instrumentation techniques: SpecialAgent, OpenTelemetry and Dependency Injection. 
-
+This repository measures the initialization times introduced by various 3 instrumentation techniques: SpecialAgent, OpenTelemetry and Dependency Injection. The repository is adapted from how the official [Spring site](https://spring.io/blog/2018/12/12/how-fast-is-spring) and [Spring Boot founder](https://github.com/dsyer/spring-boot-startup-bench) measure startup times.
+ 
 We measure the benchmarks of these techniques using 3 microservices:
  - SpringHelloWorld showcasing a demo of Spring Boot 
  - The Carts microservices from the [SockShop](https://microservices-demo.github.io/) microservice reference application made by [Weaveworks](https://www.weave.works/).
