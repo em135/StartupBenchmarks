@@ -8,10 +8,10 @@ import org.openjdk.jmh.annotations.*;
 @BenchmarkMode({Mode.AverageTime})
 public class TrainTicket {
 
-    private static String ttControlPath = "C:\\Users\\Emil\\Desktop\\StartupBenchmarks\\control\\trainticket.jar";
-    private static String ttDI_Path = "C:\\Users\\Emil\\Desktop\\StartupBenchmarks\\di\\trainticket.jar";
-    private static String otelAgent = "-javaagent:C:\\Users\\Emil\\Desktop\\StartupBenchmarks\\opentelemetry-javaagent-all.jar";
-    private static String specialAgent = "-javaagent:C:\\Users\\Emil\\Desktop\\StartupBenchmarks\\opentracing-specialagent-1.7.5-SNAPSHOT.jar";
+    private static String ttControlPath = "../control/trainticket.jar";
+    private static String ttDI_Path =  "../di/trainticket.jar";
+    private static String otelAgent = "-javaagent:../agent/opentelemetry-javaagent-all.jar";
+    private static String specialAgent = "-javaagent:../agent/opentracing-specialagent.jar";
 
     @Benchmark
     public void controlTrainTicket(NormalState state) throws Exception {

@@ -8,10 +8,10 @@ import org.openjdk.jmh.annotations.*;
 @BenchmarkMode({Mode.AverageTime})
 public class Demo {
 
-    private static String demoControlPath = "C:\\Users\\Emil\\Desktop\\StartupBenchmarks\\control\\demo.jar";
-    private static String demoDI_Path = "C:\\Users\\Emil\\Desktop\\StartupBenchmarks\\di\\demo.jar";
-    private static String otelAgent = "-javaagent:C:\\Users\\Emil\\Desktop\\StartupBenchmarks\\opentelemetry-javaagent-all.jar";
-    private static String specialAgent = "-javaagent:C:\\Users\\Emil\\Desktop\\StartupBenchmarks\\opentracing-specialagent-1.7.5-SNAPSHOT.jar";
+    private static String demoControlPath = "../control/demo.jar";
+    private static String demoDI_Path = "../di/demo.jar";
+    private static String otelAgent = "-javaagent:../agent/opentelemetry-javaagent-all.jar";
+    private static String specialAgent = "-javaagent:../agent/opentracing-specialagent.jar";
 
     @Benchmark
     public void controldemo(NormalState state) throws Exception {

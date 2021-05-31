@@ -8,10 +8,10 @@ import org.openjdk.jmh.annotations.*;
 @BenchmarkMode({Mode.AverageTime})
 public class Carts {
 
-    private static String cartsControlPath = "C:\\Users\\Emil\\Desktop\\StartupBenchmarks\\control\\carts.jar";
-    private static String cartsDI_Path = "C:\\Users\\Emil\\Desktop\\StartupBenchmarks\\di\\carts.jar";
-    private static String otelAgent = "-javaagent:C:\\Users\\Emil\\Desktop\\StartupBenchmarks\\opentelemetry-javaagent-all.jar";
-    private static String specialAgent = "-javaagent:C:\\Users\\Emil\\Desktop\\StartupBenchmarks\\opentracing-specialagent-1.7.5-SNAPSHOT.jar";
+    private static String cartsControlPath = "../control/carts.jar";
+    private static String cartsDI_Path = "../di/carts.jar";
+    private static String otelAgent = "-javaagent:../agent/opentelemetry-javaagent-all.jar";
+    private static String specialAgent = "-javaagent:../agent/opentracing-specialagent.jar";
 
     @Benchmark
     public void controlCarts(NormalState state) throws Exception {
