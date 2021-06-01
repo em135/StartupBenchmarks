@@ -11,7 +11,7 @@ This project uses two agents for instrumentation. These are already included in 
  - Build the jar from our fork of SpecialAgent which can be found [here](https://github.com/Xitric/java-specialagent)
  - Download the jar for OpenTelemtry [here](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent-all.jar)
 
-The 6 microservices in this project are also already built. Control projects are microservices without instrumentation and are found within benchmark/control. The others are instrumented with Dependency Injection and are found within benchmark/di:
+The 3 microservices in this project are also already built. Control projects are microservices without instrumentation and are found within benchmark/control. The others are instrumented with Dependency Injection and are found within benchmark/di:
  - SpringHelloWorld
  - SpringHelloWorldControl
  - carts-control
