@@ -11,7 +11,7 @@ This project uses two agents for instrumentation which must be built:
  - Build the jar from our fork of SpecialAgent which can be found [here](https://github.com/Xitric/java-specialagent)
  - The jar for OpenTelemtry can be downloaded [here](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent-all.jar)
 
-The 6 microservices in this project must be built. Control projects are microservices without instrumentation. The others are instrumented with Dependency Injection:
+The 3 microservices in this project must be built. Control projects are microservices without instrumentation. The others are instrumented with Dependency Injection:
  - SpringHelloWorld
  - SpringHelloWorldControl
  - carts-control
