@@ -6,7 +6,26 @@ We measure the benchmarks of these techniques using 3 microservices:
  - The Carts microservices from the [SockShop](https://microservices-demo.github.io/) microservice reference application made by [Weaveworks](https://www.weave.works/).
  - The ts-travel-service from [Train Ticket](https://github.com/FudanSELab/train-ticket/).
 
-## Run
+## Build
+This project uses two agents for instrumentation. These are already included in this project within the benchmark/agent folder. Alternatively, they can be retrieved by doing the following:
+ - Build the jar from our fork of SpecialAgent which can be found [here](https://github.com/Xitric/java-specialagent)
+ - Download the jar for OpenTelemtry [here](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent-all.jar)
+
+The 6 microservices in this project are also already built. Control projects are microservices without instrumentation and are found within benchmark/control. The others are instrumented with Dependency Injection and are found within benchmark/di:
+ - SpringHelloWorld
+ - SpringHelloWorldControl
+ - carts-control
+ - carts
+ - ts-travel-service-control
+ - ts-travel-service
+
+Alternatively, these can be built again using the following command:
+```bash
+mvn clean install
+```
+
+## Run benchmarks
+Before running the benchmarks make sure that the files within the benchmark folder points to the correct microservice jars and agents.
 To build the benchmark application use the following command in the benchmark folder. This will build the jar file to run the benchmarks:
 
 ```bash
